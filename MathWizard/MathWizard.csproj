@@ -5,4 +5,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MathWizardHelper" Version="1.0.0" />
+  </ItemGroup>
 </Project>

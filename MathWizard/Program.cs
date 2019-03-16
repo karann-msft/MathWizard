@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathWizardHelper;
+using System;
 
 namespace MathWizard
 {
@@ -6,8 +7,12 @@ namespace MathWizard
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            Console.WriteLine("Enter two numbers:");
+            var a = Console.ReadLine();
+            var b = Console.ReadLine();
+            Operations operation = new Operations();
+            var c = operation.Multiply(float.Parse(a), float.Parse(b));
+            Console.WriteLine("{0} * {1} = {2}", a, b, c);
 
         }
     }
