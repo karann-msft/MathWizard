@@ -18,7 +18,9 @@ steps:
   inputs:
     version: 2.2.105
 
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet restore -s https://api.nuget.org/v3/index.json
+
+- script: dotnet build --configuration $(buildConfiguration) --no-restore
   displayName: 'dotnet build $(buildConfiguration)'
 
 - script: dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
