@@ -19,10 +19,12 @@ steps:
     version: 2.2.105
 
 - script: dotnet restore -s https://apidev.nugettest.org/v3/index.json
+  displayName: 'dotnet restore'
 
 - script: dotnet build --configuration $(buildConfiguration) --no-restore
   displayName: 'dotnet build $(buildConfiguration)'
 
 - script: dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
+  displayName: 'dotnet publish'
 
 - task: PublishBuildArtifacts@1
