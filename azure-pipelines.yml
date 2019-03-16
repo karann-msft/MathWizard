@@ -10,10 +10,10 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  buildConfiguration: 'Debug'
+  buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build --configuration $(buildConfiguration) --self-contained true
   displayName: 'dotnet build $(buildConfiguration)'
 
 - script: dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
