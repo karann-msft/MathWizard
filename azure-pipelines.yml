@@ -19,6 +19,7 @@ steps:
     version: 2.2.105
 
 - script: dotnet restore -s https://api.nuget.org/v3/index.json
+  displayName: 'Restore NuGet packages'
 
 - script: dotnet build --configuration $(buildConfiguration) --no-restore
   displayName: 'dotnet build $(buildConfiguration)'
