@@ -4,7 +4,7 @@
     ".NETCoreApp,Version=v2.2": {
       "MathWizardHelper": {
         "type": "Direct",
-        "requested": "[1.0.0, )",
+        "requested": "[1.0.*, )",
         "resolved": "1.0.0",
         "contentHash": "qBVZ2a78lT5aXQI2F7rPXBNhx+25e68QT4vIcuxtga0I0pO5iXZiemKtSp3ogrvftib82ld1X+YbR+2PaZ6dSQ=="
       },
