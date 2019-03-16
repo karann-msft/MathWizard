@@ -16,6 +16,6 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: dotnet publish --configuration $(buildConfiguration) -r win10-x64 --self-contained false --output $BUILD_ARTIFACTSTAGINGDIRECTORY
+- script: dotnet publish --configuration $(buildConfiguration) -r win10-x64 --self-contained false --output $BUILD_ARTIFACTSTAGINGDIRECTORY --zipAfterPublish true
 
 - task: PublishBuildArtifacts@1
