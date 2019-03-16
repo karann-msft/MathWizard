@@ -4,9 +4,9 @@
     ".NETCoreApp,Version=v2.1": {
       "MathWizardHelper": {
         "type": "Direct",
-        "requested": "[1.0.0, )",
-        "resolved": "1.0.0",
-        "contentHash": "qBVZ2a78lT5aXQI2F7rPXBNhx+25e68QT4vIcuxtga0I0pO5iXZiemKtSp3ogrvftib82ld1X+YbR+2PaZ6dSQ=="
+        "requested": "[1.0.1, )",
+        "resolved": "1.0.1",
+        "contentHash": "bhlmOGNzQFOXs+KvEJuSU7w96Qpa0vFyArhIhDxetcRFVyeL+J8LuMfx9+GBpeHyY6s2SHFp++KLllMMr1YadA=="
       },
       "Microsoft.NETCore.App": {
         "type": "Direct",
