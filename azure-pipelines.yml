@@ -19,10 +19,9 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
-    publishWebProjects: True
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) -r win10-x64 --self-contained true'
     zipAfterPublish: True
 
 #- script: dotnet publish --configuration $(buildConfiguration) -r win10-x64 --self-contained false --output $BUILD_ARTIFACTSTAGINGDIRECTORY --zipAfterPublish true
 
-#- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@1
