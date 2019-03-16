@@ -26,9 +26,9 @@ steps:
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
   inputs:
-    vstsFeed: 'af78cfbf-e237-4f70-8918-2b59d3607411'
+    vstsFeed: '1aaa557e-474c-4e89-93ff-0776209b7d36'
 
-#- script: dotnet restore -s https://pkgs.dev.azure.com/karannandwani/_packaging/GoodFeed/nuget/v3/index.json
+#- script: dotnet restore -s https://pkgs.dev.azure.com/karannandwani/_packaging/GoodFeed/nuget/v3/index.json vstsFeed: 'af78cfbf-e237-4f70-8918-2b59d3607411'
 #  displayName: 'dotnet restore'
 
 - script: dotnet build --configuration $(buildConfiguration) --no-restore
