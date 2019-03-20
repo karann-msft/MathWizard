@@ -11,6 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  skipComponentGovernanceDetection: 'true'
 
 steps:
 - task: DotNetCoreInstaller@0
